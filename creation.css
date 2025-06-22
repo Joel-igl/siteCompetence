@@ -1,0 +1,39 @@
+#creation-site-web {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#creation-site-web h2 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.telecharger {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.telecharger:hover {
+  background-color: #004a99;
+}
+
+video {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+}
+#video-container{
+  flex:1 ;
+  display: flex;
+}
+h2{
+  text-align: center;
+}

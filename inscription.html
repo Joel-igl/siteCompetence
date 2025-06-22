@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription - FJ Academy</title>
+  <link rel="stylesheet" href="inscri con.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Créer un compte</h2>
+    
+<form onsubmit="enregistrerUtilisateur(event)">
+      <input type="text" id="nom" placeholder="Nom complet" required>
+      <input type="email" id="email" placeholder="Email" required>
+     <input type="password" id="motdepasse" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+    <p>Déjà inscrit ? <a href="connexion.html">Se connecter</a></p>
+    
+<script>
+function enregistrerUtilisateur(e) {
+  e.preventDefault();
+  const utilisateur = {
+    nom: document.getElementById("nom").value,
+    email: document.getElementById("email").value,
+    motdepasse: document.getElementById("motdepasse").value
+  };
+  localStorage.setItem("fjUtilisateur", JSON.stringify(utilisateur));
+  alert("Inscription réussie 🎉");
+  window.location.href = "connexion.html";
+}
+</script>
+  </div>
+</body>
+</html>
+
+
+  
+
+
+  
+  
+  
+
+

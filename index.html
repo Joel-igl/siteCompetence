@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Informatique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+  const nom = sessionStorage.getItem("connecteFJ");
+  if (!nom) {
+    window.location.href = "inscription.html"; // ou "connexion.html" si tu préfères
+  }
+</script>
+
+
+
+</head>
+<body>
+    <script src="https://www.gstatic.com/dialogflow-console/embedded.js"></script>
+<df-messenger intent="WELCOME" chat-title="Assistant IA"></df-messenger>
+<div class="animate-on-scroll">Contenu animé</div>
+
+
+
+    <header>
+        <h1>Bienvenue sur mon site !</h1>
+        <p>Découvrez mes compétences en informatique</p>
+    </header>
+     <button class="menu-btn">☰ Menu</button>
+<nav class="mobile-menu">
+    <nav>
+        <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="porfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="services">
+       <h2 class="fade-in">Compétences informatiques</h2>
+       
+       <div class="carousel">
+  
+    <img src="csw.png" alt="Création de site web">
+    <img src="maint.jpeg" alt="Maintenance informatique">
+    <img src="secre.jpeg" alt="Secrétariat">
+    <img src="info.jpeg" alt="Infographie">
+    <img src="programme 2.jpg" alt="Programmation">
+    </div>
+</section>
+
+    
+    </section>
+
+    <section id="portfolio">
+        <h2>Mes Réalisations</h2>
+        <p>Exemples de projets réalisés.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="post">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <!-- Bouton Sellfy intégré -->
+<script async src="https://sellfy.com/embed.js"></script>
+<!-- Bouton WhatsApp flottant -->
+<a href="https://wa.me/237691694660" class="whatsapp-float" target="_blank">
+  <img src="icon sapp.png" alt="Contact WhatsApp">
+  <a href="https://wa.me/237691694660?text=Bonjour%20FJ%20Academy%20!%20Je%20souhaite%20avoir%20plus%20d'infos." class="whatsapp-float" target="_blank">
+
+</a>
+
+
+
+    <footer>
+    <p>&copy; 2025 Site Web - Tous droits réservés</p>
+    <a href="https://wa.me/691694660"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://facebook.com/joel phantome"><i class="fab fa-facebook"></i> Facebook</a>
+     <p><i class="fas fa-envelope"></i> Email : <a href="mailto:louislacti237@gmail.com"></a>louislacti237@gmail.com</p>
+      <p><i class="fas fa-phone"></i> Téléphone : +237 91694660</p>
+      <h2 id="bienvenue"></h2>
+  <button onclick="deconnexion()">Déconnexion</button>
+</footer>
+    <script src="script.js"></script>
+   
+</body>
+</html>

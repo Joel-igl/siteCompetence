@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation Informatique</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image" href="favicon.ico">
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo FJ" class="logo">
+        <h1>Bienvenue sur mon site !</h1>
+        <p>Découvrez mes compétences en informatique</p>
+    </header>
+     <button class="menu-btn">☰ Menu</button>
+<nav class="mobile-menu">
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+<section id="contact">
+    <h2>Contactez-moi</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email : <a href="mailto:louislacti237@gmail.com"></a>louislacti237@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Téléphone : +237 91694660</p>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp : <a href="https://wa.me/691694660">Envoyer un message</a></p>
+        </div>
+
+        <form action="contact.php" method="post">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</section>
+<style>
+    .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+</style>
+<footer>
+    <p>&copy; 2025 Site Web - Tous droits réservés</p>
+    <a href="https://wa.me/691694660"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://facebook.com/joel phantome"><i class="fab fa-facebook"></i> Facebook</a>
+     <p><i class="fas fa-envelope"></i> Email : <a href="mailto:louislacti237@gmail.com"></a>louislacti237@gmail.com</p>
+      <p><i class="fas fa-phone"></i> Téléphone : +237 91694660</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
